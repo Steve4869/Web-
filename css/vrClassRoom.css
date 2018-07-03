@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* top */
+
+#top {
+    height: 64px;
+}
+
+/* .top_left */
+
+.top_left {
+    height: 64px;
+    width: 265px;
+    background: -webkit-linear-gradient(#1cc6fd,#16a4fa);
+    float: left;
+}
+
+.top_left>img {
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 8px;
+    float: left;
+}
+
+.top_left>p {
+    padding-top: 22px;
+    font-family: 'Microsoft YaHei regual Bold'; 
+    color: #ffffff;
+}
+
+/* .top_right */
+
+.top_right {
+    height: 63px;
+    background: #ffffff;
+    border-bottom: 1px #e2e2e2 solid;
+}
+
+.message {
+    width: 70%;
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei regual';
+    color: #a0a0a0;
+    float: left;
+}
+
+.name {
+    
+    width: 180px;
+    box-sizing: border-box;
+    border-right: 1px #eff1f1 solid;
+    float: left;
+}
+
+.name>img {
+    padding-left: 52px;
+    padding-right: 4px;
+    float: left; 
+}
+
+.name>p {
+    padding-right: 16px; 
+}
+
+.identity>img {
+    padding-left: 16px;
+    padding-right: 4px;
+    float: left;  
+}
+
+.identity>p {
+    float: left;
+}
+
+.choose {
+    height: 34px;
+    width: 102px;
+    padding: 16px 54px 0 0;
+    float: right;
+}
+
+/* nav */
+
+#nav {
+    height: 49px;
+}
+
+/* nav_left */
+
+.nav_left {
+    width: 265px;
+    height: 49px;
+    background: #354052;
+    font-family: 'Microsoft YaHei regual';
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+}
+
+.nav_left>p {
+   line-height: 49px;
+}
+
+/* nav_right */
+
+.nav_right {
+    height: 49px;
+    background: #ffffff;
+    border-bottom: 1px #e2e2e2 solid;
+}
+
+.works {
+    width: 60%;
+    font-size: 18px; 
+}
+
+.my_works {
+    text-align: center;
+    border-right: 1px #eff1f1 solid;
+    float: left;
+}
+
+.my_works>p {
+    padding-left: 54px;
+    padding-right: 54px;
+    line-height: 49px;
+    font-family: 'Microsoft YaHei regual';
+    color: #16a4fa;
+    
+}
+
+.my_works>div {
+    width: 2px;
+    box-sizing: border-box; 
+    border-bottom: 2px #16a4fa solid ;
+}
