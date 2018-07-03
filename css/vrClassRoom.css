@@ -4,18 +4,26 @@
     list-style: none;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 /* top */
 
 #top {
     height: 64px;
 }
 
-/* .top_left */
+/* top_left */
 
 .top_left {
     height: 64px;
     width: 265px;
-    background: -webkit-linear-gradient(#1cc6fd,#16a4fa);
+    background: -webkit-linear-gradient(left,#1cc6fd,#16a4fa);/* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#1cc6fd,#16a4fa); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,#1cc6fd,#16a4fa); /* Firefox 3.6 - 15 */
+    background: linear-gradient(right,#1cc6fd,#16a4fa); /* 标准的语法 */
     float: left;
 }
 
@@ -32,7 +40,7 @@
     color: #ffffff;
 }
 
-/* .top_right */
+/* top_right */
 
 .top_right {
     height: 63px;
@@ -115,6 +123,8 @@
     border-bottom: 1px #e2e2e2 solid;
 }
 
+/* works */
+
 .works {
     width: 60%;
     font-size: 18px; 
@@ -122,21 +132,144 @@
 
 .my_works {
     text-align: center;
-    border-right: 1px #eff1f1 solid;
     float: left;
 }
 
 .my_works>p {
     padding-left: 54px;
     padding-right: 54px;
-    line-height: 49px;
+    line-height: 47px;
     font-family: 'Microsoft YaHei regual';
     color: #16a4fa;
-    
+    border-right: 1px #eff1f1 solid;
 }
 
 .my_works>div {
-    width: 2px;
+    margin-left: 36px;
+    height: 2px;
+    width: 108px;
     box-sizing: border-box; 
     border-bottom: 2px #16a4fa solid ;
+}
+
+.class_works {
+    text-align: center;
+    float: left;
+}
+
+.class_works>p {
+    padding-left: 54px;
+    line-height: 49px;
+    font-family: 'Microsoft YaHei regual';
+    color: #4b5d67;
+}
+
+/* button */
+
+.button {
+    padding-top: 8px;
+}
+
+.submit>img {
+    height: 34px;
+    padding-left: 46px;
+    padding-right: 20px;
+    position: relative;
+    float: right;
+}
+
+.new>img {
+    margin-right: 54px;
+    height: 34px;
+    position: relative; 
+    float: right;
+} 
+
+/* main */
+
+#main {
+    height: 967px;
+}
+/* main_left */
+
+.main_left {
+    height: 967px;
+    width: 265px;
+    background: #3d485d;
+    float: left;
+    /* position: absolute; */
+}
+
+.lesson li {
+    height: 58px;
+}
+
+.lesson img {
+    padding: 22px 12px 0 28px;
+    float: left;
+}
+
+.lesson p {
+    line-height: 58px;
+    font-size: 16px;
+    font-family: 'Microsoft YaHei regual';
+    color: #a4afc3
+}
+
+.blue_rope {
+    width: 4px;
+    height: 58px; 
+    background: -webkit-linear-gradient(#1cc6fd,#16a4fa); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#1cc6fd,#16a4fa); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#1cc6fd,#16a4fa); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#1cc6fd,#16a4fa); /* 标准的语法 */
+    float: left;
+}
+
+/* chose */
+
+.lesson_one {
+    background: #4f5f79; 
+}
+
+.lesson_one>img {
+    padding-left: 24px;
+} 
+
+.lesson_one>p {
+    font-family: 'Microsoft YaHei regual Bold'; 
+    color: #eff1f1;
+}
+
+/* float */
+
+.lesson_three {
+    background: -webkit-linear-gradient(left,#1cc6fd,#16a4fa);/* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right,#1cc6fd,#16a4fa); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right,#1cc6fd,#16a4fa); /* Firefox 3.6 - 15 */
+    background: linear-gradient(right,#1cc6fd,#16a4fa); /* 标准的语法 */
+}
+
+.lesson_three>p {
+    font-family: 'Microsoft YaHei regual Bold'; 
+    color: #eff1f1;
+}
+
+/* main_right */
+
+.main_right {
+    height: 967px;
+}
+
+.main_right>img {
+    padding: 22px 126px 10px 24px;
+    float: right;
+}
+
+.search {
+    height: 36px;
+    width: 310px;
+    margin-top: 22px;
+    box-sizing: border-box;
+    float: right;
 }
