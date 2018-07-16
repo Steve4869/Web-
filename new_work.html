@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/newWork.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="new_work" action="" method="GET">
+        <div class="title">
+            <p>新建作品</p>
+            <a onclick="layer.style.display=none"></a>
+        </div>
+        <div class="body">
+            <p>
+                <label>资源名称</label>
+                <input type="input" name="resource_name" id="resource_name">
+            </p>
+            <p>
+                <label>作者</label>
+                <input type="input" name="author" id="author">
+                <img src="img/icon_add.png" class="add">
+            </p>
+            <p>
+                <label>配图</label>
+                <input type="input" name="picture" id="picture">
+            </p>
+            <p>
+                <label>简介</label>
+                <input type="input" name="intro" id="intro">
+            </p>
+        </div>
+        <div class="footer">
+            <input type="submit" name="submit" id="submit" value="确认提交">
+            <p>提交后显示在班级作品区</p>
+        </div>
+    </form>
+</body>
+</html>

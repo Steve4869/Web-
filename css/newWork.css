@@ -1,0 +1,108 @@
+
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#new_work {
+    /* display: none;
+    position: absolute; */
+    height: 36.25rem;
+    width: 47rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+/* title */
+
+.title {
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(left, #16a4fa, #1cc6fd);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #16a4fa, #1cc6fd);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #16a4fa, #1cc6fd);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right,  #16a4fa, #1cc6fd);
+    /* 标准的语法 */
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.title>p {
+    color: #eff1f1;
+}
+
+/* body */
+
+.body {
+    height: 75%;
+}
+
+.body>p:nth-child(1) {
+    padding-left: 2.625rem;
+}
+
+.body>p {
+    padding-left: 4.625rem;
+}
+
+.body>p>label {
+    color: #4d5b67;
+}
+
+.body>p>input {
+    border: #d0d0d0 solid 1px;
+    width: 18.625rem;
+    height: 2.125rem;
+}
+
+.body>p>#author {
+    height: 5.25rem;
+    width: 24.875rem;
+}
+
+.body>p>#intro {
+    height: 9.25rem;
+    width: 34.125rem;
+}
+
+/* footer */
+
+.footer {
+    height: 17%;
+    background: #f0f5f9;
+    border-radius: 0 0 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer>#submit {
+    margin-top: 1.1875rem;
+    height: 2.125rem;
+    width: 7.625rem;
+    background: -webkit-linear-gradient(#1cc6fd, #16a4fa);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#1cc6fd, #16a4fa);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#1cc6fd, #16a4fa);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#1cc6fd, #16a4fa);
+    /* 标准的语法 */
+    color: #ffffff;
+    border: #1293f9 solid 1px;
+    font-size: 1rem;
+}
+
+.footer>p {
+    display: flex;
+    color: #b2b2b2;
+}
