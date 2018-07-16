@@ -4,82 +4,97 @@
     list-style: none;
 }
 
-html {
-    height: 100%;
-    width: 100%;
-    background: #3d485d;
+@media screen and (min-width: 1900px) {
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1900px) {
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+    }
 }
 
 /* top */
 
 #top {
-    height: 64px;
+    height: 4rem;
 }
 
 /* top_left */
 
 .top_left {
-    height: 64px;
-    width: 265px;
-    background: -webkit-linear-gradient(left,#1cc6fd,#16a4fa);/* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(right,#1cc6fd,#16a4fa); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(right,#1cc6fd,#16a4fa); /* Firefox 3.6 - 15 */
-    background: linear-gradient(right,#1cc6fd,#16a4fa); /* 标准的语法 */
+    height: 4rem;
+    width: 13.8%;
+    background: -webkit-linear-gradient(left, #1cc6fd, #16a4fa);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #1cc6fd, #16a4fa);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #1cc6fd, #16a4fa);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right, #1cc6fd, #16a4fa);
+    /* 标准的语法 */
     float: left;
 }
 
 .top_left>img {
-    padding-top: 20px;
-    padding-left: 60px;
-    padding-right: 8px;
+    padding-top: 1.25rem;
+    padding-left: 3.75rem;
+    padding-right: .5rem;
     float: left;
 }
 
 .top_left>p {
-    padding-top: 22px;
-    font-family: 'Microsoft YaHei regual Bold'; 
+    padding-top: 1.375rem;
+    font-family: 'Microsoft YaHei regual Bold';
     color: #ffffff;
 }
 
 /* top_right */
 
 .top_right {
-    height: 63px;
+    height: 3.9375rem;
     background: #ffffff;
     border-bottom: 1px #e2e2e2 solid;
 }
 
 .message {
     width: 60%;
-    padding-top: 20px;
-    font-size: 14px;
+    padding-top: 1.25rem;
+    font-size: .875rem;
     font-family: 'Microsoft YaHei regual';
     color: #a0a0a0;
     float: left;
 }
 
 .name {
-    
-    width: 180px;
+    width: 11.25rem;
     box-sizing: border-box;
     border-right: 1px #eff1f1 solid;
     float: left;
 }
 
 .name>img {
-    padding-left: 52px;
-    padding-right: 4px;
-    float: left; 
+    padding-left: 3.25rem;
+    padding-right: .25rem;
+    float: left;
 }
 
 .name>p {
-    padding-right: 16px; 
+    padding-right: 1rem;
 }
 
 .identity>img {
-    padding-left: 16px;
-    padding-right: 4px;
-    float: left;  
+    padding-left: 1rem;
+    padding-right: .25rem;
+    float: left;
 }
 
 .identity>p {
@@ -87,39 +102,39 @@ html {
 }
 
 .choose {
-    height: 34px;
-    width: 102px;
-    padding: 16px 54px 0 0;
+    height: 2.125rem;
+    width: 6.375rem;
+    padding: 1rem 3.375rem 0 0;
     float: right;
 }
 
 /* nav */
 
 #nav {
-    height: 49px;
+    height: 3.0625rem;
 }
 
 /* nav_left */
 
 .nav_left {
-    width: 265px;
-    height: 49px;
+    width: 13.8%;
+    height: 3.0625rem;
     background: #354052;
     font-family: 'Microsoft YaHei regual';
-    font-size: 16px;
+    font-size: inherit;
     text-align: center;
     color: #ffffff;
     float: left;
 }
 
 .nav_left>p {
-   line-height: 49px;
+    line-height: 3.0625rem;
 }
 
 /* nav_right */
 
 .nav_right {
-    height: 49px;
+    height: 3.0625rem;
     background: #ffffff;
     border-bottom: 1px #e2e2e2 solid;
 }
@@ -128,7 +143,7 @@ html {
 
 .works {
     width: 60%;
-    font-size: 18px; 
+    font-size: 1.125rem;
 }
 
 .my_works {
@@ -137,20 +152,20 @@ html {
 }
 
 .my_works>p {
-    padding-left: 54px;
-    padding-right: 54px;
-    line-height: 47px;
+    padding-left: 3.375rem;
+    padding-right: 3.375rem;
+    line-height: 2.9375rem;
     font-family: 'Microsoft YaHei regual';
     color: #16a4fa;
     border-right: 1px #eff1f1 solid;
 }
 
 .my_works>div {
-    margin-left: 36px;
-    height: 2px;
-    width: 108px;
-    box-sizing: border-box; 
-    border-bottom: 2px #16a4fa solid ;
+    margin-left: 2.25rem;
+    height: .125rem;
+    width: 6.75rem;
+    box-sizing: border-box;
+    border-bottom: 2px #16a4fa solid;
 }
 
 .class_works {
@@ -159,8 +174,8 @@ html {
 }
 
 .class_works>p {
-    padding-left: 54px;
-    line-height: 49px;
+    padding-left: 3.375rem;
+    line-height: 3.0625rem;
     font-family: 'Microsoft YaHei regual';
     color: #4b5d67;
 }
@@ -168,91 +183,100 @@ html {
 /* button */
 
 .button {
-    padding-top: 8px;
+    padding-top: .5rem;
 }
 
 .submit>img {
-    height: 34px;
-    padding-left: 46px;
-    padding-right: 20px;
+    height: 2.125rem;
+    padding-left: 2.875rem;
+    padding-right: 1.25rem;
     position: relative;
     float: right;
 }
 
 .new>img {
-    margin-right: 54px;
-    height: 34px;
-    position: relative; 
+    margin-right: 3.375rem;
+    height: 2.125rem;
+    position: relative;
     float: right;
-} 
+}
 
 /* main */
 
 #main {
-    height: 967px;
+    height: 60.4375rem;
 }
+
 /* main_left */
 
 .main_left {
     height: 100%;
-    width: 265px;
+    width: 13.8%;
     background: #3d485d;
     float: left;
     /* position: absolute; */
 }
 
 .lesson li {
-    height: 58px;
+    height: 3.625rem;
 }
 
 .lesson img {
-    padding: 22px 12px 0 28px;
+    padding: 1.375rem .75rem 0 1.75rem;
     float: left;
 }
 
 .lesson p {
-    line-height: 58px;
-    font-size: 16px;
+    line-height: 3.625rem;
+    font-size: 1rem;
     font-family: 'Microsoft YaHei regual';
     color: #a4afc3
 }
 
 .blue_rope {
-    width: 4px;
-    height: 58px; 
-    background: -webkit-linear-gradient(#1cc6fd,#16a4fa); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(#1cc6fd,#16a4fa); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(#1cc6fd,#16a4fa); /* Firefox 3.6 - 15 */
-    background: linear-gradient(#1cc6fd,#16a4fa); /* 标准的语法 */
+    width: .25rem;
+    height: 3.625rem;
+    background: -webkit-linear-gradient(#1cc6fd, #16a4fa);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#1cc6fd, #16a4fa);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#1cc6fd, #16a4fa);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#1cc6fd, #16a4fa);
+    /* 标准的语法 */
     float: left;
 }
 
 /* chose */
 
 .lesson_one {
-    background: #4f5f79; 
+    background: #4f5f79;
 }
 
 .lesson_one>img {
-    padding-left: 24px;
-} 
+    padding-left: 1.5rem;
+}
 
 .lesson_one>p {
-    font-family: 'Microsoft YaHei regual Bold'; 
+    font-family: 'Microsoft YaHei regual Bold';
     color: #eff1f1;
 }
 
 /* float */
 
 .lesson_three {
-    background: -webkit-linear-gradient(left,#1cc6fd,#16a4fa);/* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(right,#1cc6fd,#16a4fa); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(right,#1cc6fd,#16a4fa); /* Firefox 3.6 - 15 */
-    background: linear-gradient(right,#1cc6fd,#16a4fa); /* 标准的语法 */
+    background: -webkit-linear-gradient(left, #1cc6fd, #16a4fa);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #1cc6fd, #16a4fa);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #1cc6fd, #16a4fa);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right, #1cc6fd, #16a4fa);
+    /* 标准的语法 */
 }
 
 .lesson_three>p {
-    font-family: 'Microsoft YaHei regual Bold'; 
+    font-family: 'Microsoft YaHei regual Bold';
     color: #eff1f1;
 }
 
@@ -264,33 +288,74 @@ html {
 }
 
 .search_input>img {
-    padding: 22px 126px 10px 24px;
+    height: 2.125rem;
+    width: 4.75rem;
+    padding: 1.375rem 7.875rem .625rem 1.5rem;
     float: right;
 }
 
 .search_input {
-    height: 66px;
+    height: 4.125rem;
     width: 100%;
-} 
+}
 
 .search {
-    height: 36px;
-    width: 310px;
-    margin-top: 22px;
+    height: 2.25rem;
+    width: 19.375rem;
+    margin-top: 1.375rem;
     box-sizing: border-box;
     float: right;
 }
 
-.main_right li {
+.photo li {
+    width: 21%;
     float: left;
+    box-sizing: border-box;
+}
+
+.photo {
+    height: 40.25rem;
 }
 
 .photo img {
-    height: 270px;
-    width: 358px;
-    padding: 24px 0 14px 44px;
+    height: 16.875rem;
+    width: 22.375rem;
+    padding: 1.5rem 0 .875rem 2.75rem;
 }
 
 .photo p {
+    padding-left: 2.75rem;
     text-align: center;
+}
+
+
+.page>ul>li:nth-child(1) {
+    padding: 5.5rem 0 0 35.75rem;
+    float: left;
+}
+
+.page li { 
+    padding-top: 5.5rem; 
+    float: left;
+}
+
+.page>ul>li>p {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+    float: left;
+    line-height: 2.5rem;
+    text-align: center;
+    background: #e7e7e7;
+    color: #666666
+}
+
+#one {
+    color: #c0e6fe;
+    background: #16a4fa;
+}
+
+#five {
+    color: #d2efff;
+    background: #30b8ff;
 }
