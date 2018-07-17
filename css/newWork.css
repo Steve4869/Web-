@@ -1,9 +1,10 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 html,body {
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 #new_work {
@@ -71,6 +72,12 @@ html,body {
 .body>p>#intro {
     height: 9.25rem;
     width: 34.125rem;
+}
+
+.body>p>#add {
+    /* background: url("img/icon_add.png") no-repeat; */
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 /* footer */

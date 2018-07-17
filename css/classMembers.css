@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#class_members {
+    height: 36rem;
+    width: 26.625rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+/* title */
+
+.title {
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(left, #16a4fa, #1cc6fd);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #16a4fa, #1cc6fd);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #16a4fa, #1cc6fd);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(right,  #16a4fa, #1cc6fd);
+    /* 标准的语法 */
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.title>p {
+    color: #eff1f1;
+}
+
+/* body */
+
+.body {
+    margin-left: 1.25rem;
+    margin-top: 1.375rem;
+    height: 29rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.search_members {
+    display: flex;
+    flex-direction: column;
+}
+
+#search {
+    height: 2.25rem;
+    width: 9rem;
+    border: 1px solid #d0d0d0;
+}
+
+.members {
+    height: 24.25rem;
+    width: 9rem;
+    margin: 0;
+    border: 1px solid #d0d0d0;
+    border-top: 0;
+}
+
+.members li {
+    height: 1.625rem;
+    width: 7.0625rem;
+    padding: .5rem 0 0 .3125rem;
+    color: #4d5b67;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.125rem;
+    margin-right: 1.25rem;
+}
+
+#add {
+    height: 2.125rem;
+    width: 3.75rem;
+    background: -webkit-linear-gradient(#1cc6fd, #16a4fa);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#1cc6fd, #16a4fa);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#1cc6fd, #16a4fa);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#1cc6fd, #16a4fa);
+    /* 标准的语法 */
+    color: #ffffff;
+    border: #1293f9 solid 1px;
+    font-size: 1rem;
+}
+
+#delete {
+    height: 2.125rem;
+    width: 3.75rem;
+    margin-top: 2.375rem;
+    background: -webkit-linear-gradient(#b9c1d1, #909db6);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#b9c1d1, #909db6);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#b9c1d1, #909db6);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#b9c1d1, #909db6);
+    /* 标准的语法 */
+    color: #ffffff;
+    border: #aab5c7 solid 1px;
+    font-size: 1rem;
+}
+
+/* #selected {
+    height: 26.375rem;
+    width: 9rem;
+    border: 1px solid #d0d0d0;
+} */
+
+.selected_members {
+    height: 26.375rem;
+    width: 9rem;
+    border: 1px solid #d0d0d0;
+}
+
+.selected_members li{
+    height: 1.625rem;
+    width: 7.0625rem;
+    padding: .5rem 0 0 .3125rem;
+    color: #4d5b67;
+}
+
+/* footer */
+
+.footer {
+    height: 4.1875rem;
+    background: #f0f5f9;
+    border-radius: 0 0 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer>#ok {
+    height: 2.125rem;
+    width: 5.25rem;
+    margin-right: 3.875rem;
+    background: -webkit-linear-gradient(#1cc6fd, #16a4fa);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#1cc6fd, #16a4fa);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#1cc6fd, #16a4fa);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#1cc6fd, #16a4fa);
+    /* 标准的语法 */
+    color: #ffffff;
+    border: #1293f9 solid 1px;
+    font-size: 1rem;
+}
+
+.footer>p {
+    display: flex;
+    color: #b2b2b2;
+}
