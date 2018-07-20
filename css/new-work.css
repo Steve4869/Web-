@@ -1,13 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-html,body {
-    height: 100%;
-    width: 100%;
-}
-
-#new_work {
+.new_work {
     /* display: none;
     position: absolute; */
     height: 36.25rem;
@@ -15,6 +6,10 @@ html,body {
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+}
+
+.hide {
+    display: none;
 }
 
 /* title */
@@ -25,14 +20,13 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: -webkit-linear-gradient(left, #16a4fa, #1cc6fd);
+    background: -webkit-linear-gradient(left, #1cc6fd, #16a4fa);
     /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(right, #16a4fa, #1cc6fd);
+    background: -o-linear-gradient(right, #1cc6fd, #16a4fa);
     /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(right, #16a4fa, #1cc6fd);
+    background: -moz-linear-gradient(right, #1cc6fd, #16a4fa);
     /* Firefox 3.6 - 15 */
     background: linear-gradient(right,  #16a4fa, #1cc6fd);
-    /* 标准的语法 */
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -75,7 +69,6 @@ html,body {
 }
 
 .body>p>#add {
-    /* background: url("img/icon_add.png") no-repeat; */
     width: 1.875rem;
     height: 1.875rem;
 }
@@ -96,14 +89,7 @@ html,body {
     margin-top: 1.1875rem;
     height: 2.125rem;
     width: 7.625rem;
-    background: -webkit-linear-gradient(#1cc6fd, #16a4fa);
-    /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(#1cc6fd, #16a4fa);
-    /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(#1cc6fd, #16a4fa);
-    /* Firefox 3.6 - 15 */
     background: linear-gradient(#1cc6fd, #16a4fa);
-    /* 标准的语法 */
     color: #ffffff;
     border: #1293f9 solid 1px;
     font-size: 1rem;

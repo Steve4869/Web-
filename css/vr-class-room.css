@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1900px) {
@@ -157,10 +158,11 @@
     line-height: 2.9375rem;
     font-family: 'Microsoft YaHei regual';
     color: #16a4fa;
+    border-left: 1px #eff1f1 solid;
     border-right: 1px #eff1f1 solid;
 }
 
-.my_works>div {
+.works div {
     margin-left: 2.25rem;
     height: .125rem;
     width: 6.75rem;
@@ -175,6 +177,7 @@
 
 .class_works>p {
     padding-left: 3.375rem;
+    padding-right: 3.375rem;
     line-height: 3.0625rem;
     font-family: 'Microsoft YaHei regual';
     color: #4b5d67;
@@ -233,38 +236,33 @@
     color: #a4afc3
 }
 
-.blue_rope {
-    width: .25rem;
-    height: 3.625rem;
-    background: -webkit-linear-gradient(#1cc6fd, #16a4fa);
-    /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(#1cc6fd, #16a4fa);
-    /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(#1cc6fd, #16a4fa);
-    /* Firefox 3.6 - 15 */
-    background: linear-gradient(#1cc6fd, #16a4fa);
-    /* 标准的语法 */
-    float: left;
+.lesson a {
+    line-height: 3.625rem;
+    font-size: 1rem;
+    font-family: 'Microsoft YaHei regual';
+    color: #a4afc3
 }
 
-/* chose */
+/* select */
 
-.lesson_one {
+.lesson_select {
+    border-left: .25rem solid #1cc6fd;
     background: #4f5f79;
+    box-sizing: border-box;
 }
 
-.lesson_one>img {
+.lesson_select>img {
     padding-left: 1.5rem;
 }
 
-.lesson_one>p {
+.lesson_select>a {
     font-family: 'Microsoft YaHei regual Bold';
     color: #eff1f1;
 }
 
 /* float */
 
-.lesson_three {
+.lesson_click {
     background: -webkit-linear-gradient(left, #1cc6fd, #16a4fa);
     /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(right, #1cc6fd, #16a4fa);
@@ -275,7 +273,7 @@
     /* 标准的语法 */
 }
 
-.lesson_three>p {
+.lesson_click>a {
     font-family: 'Microsoft YaHei regual Bold';
     color: #eff1f1;
 }
@@ -287,11 +285,22 @@
     background: #edf2f6;
 }
 
-.search_input>img {
+.search_button {
     height: 2.125rem;
     width: 4.75rem;
-    padding: 1.375rem 7.875rem .625rem 1.5rem;
+    margin: 1.375rem 7.875rem .625rem 1.5rem;
+    color: #ffffff;
+    border: #1293f9 solid 1px;
+    font-size: 1rem;
     float: right;
+    background: -webkit-linear-gradient(#1cc6fd, #16a4fa);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#1cc6fd, #16a4fa);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#1cc6fd, #16a4fa);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(#1cc6fd, #16a4fa);
+    /* 标准的语法 */
 }
 
 .search_input {
@@ -328,18 +337,17 @@
     text-align: center;
 }
 
-
 .page>ul>li:nth-child(1) {
     padding: 5.5rem 0 0 35.75rem;
     float: left;
 }
 
-.page li { 
-    padding-top: 5.5rem; 
+.page li {
+    padding-top: 5.5rem;
     float: left;
 }
 
-.page>ul>li>p {
+.num {
     height: 2.5rem;
     width: 2.5rem;
     margin-right: 1rem;
@@ -350,12 +358,25 @@
     color: #666666
 }
 
-#one {
+.none {
+    height: 40.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.none>h2 {
+    padding-top: 1.375rem;
+    color: rgb(166, 175, 193);
+}
+
+.page_click {
     color: #c0e6fe;
     background: #16a4fa;
 }
 
-#five {
+.page_select {
     color: #d2efff;
     background: #30b8ff;
 }
