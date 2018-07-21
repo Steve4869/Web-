@@ -1,20 +1,36 @@
+#add {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+}
 
+#popup {
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
 
 #class_members {
-    height: 36rem;
-    width: 26.625rem;
+    height: 576px;
+    width: 426px;
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
+    background: #ffffff;
 }
 
 /* title */
 
-.title {
+.cm_title {
     height: 8%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: -webkit-linear-gradient(left, #1cc6fd, #16a4fa);
     /* Safari 5.1 - 6.0 */
@@ -27,13 +43,17 @@
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.title>p {
+.cm_title>div {
+    width: 2.2rem;
+}
+
+.cm_title>p {
     color: #eff1f1;
 }
 
 /* body */
 
-.body {
+.cm_body {
     margin-left: 1.25rem;
     margin-top: 1.375rem;
     height: 29rem;
@@ -67,6 +87,14 @@
     color: #4d5b67;
 }
 
+.members_click {
+    background: rgb(201, 228, 248);
+}
+
+.members_select {
+    background: rgb(241, 245, 249);
+}
+
 .btn {
     display: flex;
     flex-direction: column;
@@ -76,7 +104,7 @@
     margin-right: 1.25rem;
 }
 
-#add {
+#bt_add {
     height: 2.125rem;
     width: 3.75rem;
     background: linear-gradient(#1cc6fd, #16a4fa);
@@ -85,7 +113,7 @@
     font-size: 1rem;
 }
 
-#delete {
+#bt_delete {
     height: 2.125rem;
     width: 3.75rem;
     margin-top: 2.375rem;
@@ -101,7 +129,7 @@
     border: 1px solid #d0d0d0;
 }
 
-.selected_members li{
+.selected_members li {
     height: 1.625rem;
     width: 7.0625rem;
     padding: .5rem 0 0 .3125rem;
@@ -110,7 +138,7 @@
 
 /* footer */
 
-.footer {
+.cm_footer {
     height: 4.1875rem;
     background: #f0f5f9;
     border-radius: 0 0 0.5rem 0.5rem;
@@ -120,7 +148,7 @@
     align-items: flex-end;
 }
 
-.footer>#ok {
+.cm_footer>#ok {
     height: 2.125rem;
     width: 5.25rem;
     margin-right: 3.875rem;
@@ -137,7 +165,7 @@
     font-size: 1rem;
 }
 
-.footer>p {
+.cm_footer>p {
     display: flex;
     color: #b2b2b2;
 }

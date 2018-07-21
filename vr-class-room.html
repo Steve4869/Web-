@@ -7,17 +7,93 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/vr-class-room.css">
     <link rel="stylesheet" href="css/class-members.css">
     <link rel="stylesheet" href="css/new-work.css">
+    <link rel="stylesheet" href="css/vr-class-room.css">
     <script src="js/vr-class-room.js"></script>
     <title>VR极客教室</title>
 </head>
 
 <body>
+    
+    <!-- nw_form -->
+    <div id="new">
+        <div id="popupcontent">
+            <form id="new_work" class="new_work" action="" method="GET">
+                <div id="nw_drag" class="nw_title">
+                    <div></div>
+                    <p>新建作品</p>
+                    <img src="img/icon_close.png" alt="" onclick="hidePopup()">
+                </div>
+                <div class="nw_body">
+                    <p>
+                        <label>资源名称</label>
+                        <input type="input" name="resource_name" id="resource_name">
+                    </p>
+                    <p>
+                        <label>作者</label>
+                        <textarea name="author" id="author" cols="30" rows="10"></textarea>
+                        <img src="img/icon_add.png" id="add_members" onclick="sPopup(426,576)">
+                        <!-- <input type="button" name="add" id="add"> -->
+                    </p>
+                    <p>
+                        <label>配图</label>
+                        <input type="input" name="picture" id="picture" placeholder="点击上传图片">
+                    </p>
+                    <p>
+                        <label>简介</label>
+                        <textarea name="intro" id="intro" cols="30" rows="10"></textarea>
+                    </p>
+                </div>
+                <div class="nw_footer">
+                    <input type="submit" name="submit" id="submit" value="确认提交" onsubmit="nwSubmit()">
+                    <p>提交后显示在班级作品区</p>
+                    <h2 id="message"></h2>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- cm_form -->
+    <div id="add">
+            <div id="popup">
+                <div id="class_members">
+                    <div class="cm_title">
+                        <div></div>
+                        <p>班级成员</p>
+                        <img src="img/icon_close.png" alt="" onclick="hPopup()">
+                    </div>
+                    <div class="cm_body">
+                        <div class="search_members">
+                            <input type="input" name="search" id="search" placeholder="  搜索人名……">
+                            <ul class="members">
+                                <li onmouseover="membersSelect(this)" onmouseout="moveMembersSelect(this)" onclick="membersClick(this)">张三</li>
+                                <li onmouseover="membersSelect(this)" onmouseout="moveMembersSelect(this)" onclick="membersClick(this)">李四</li>
+                                <li onmouseover="membersSelect(this)" onmouseout="moveMembersSelect(this)" onclick="membersClick(this)">王五</li>
+                                <li onmouseover="membersSelect(this)" onmouseout="moveMembersSelect(this)" onclick="membersClick(this)">赵六</li>
+                                <li onmouseover="membersSelect(this)" onmouseout="moveMembersSelect(this)" onclick="membersClick(this)">林老汉</li>
+                                <li onmouseover="membersSelect(this)" onmouseout="moveMembersSelect(this)" onclick="membersClick(this)">翁老狗</li>
+                                <li onmouseover="membersSelect(this)" onmouseout="moveMembersSelect(this)" onclick="membersClick(this)">邱勇帅</li>
+                            </ul>
+                        </div>
+                        <div class="btn">
+                            <input type="button" value="添加" id="bt_add" onclick="btAdd()">
+                            <input type="button" value="删除" id="bt_delete" onclick="btDelete()">
+                        </div>
+                        <div>
+                            <!-- <input type="text" name="selected" id="selected"> -->
+                            <ul class="selected_members">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cm_footer">
+                        <input type="button" value="确认" id="ok" onclick="btOk()">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- top -->
-
     <top id="top">
 
         <div class="top_left">
@@ -57,7 +133,7 @@
             </ul>
             <ul class="button">
                 <li class="new">
-                    <img src="img/button_new.png" onclick="newWork">
+                    <img src="img/button_new.png" onclick="showPopup(752,580)">
                 </li>
                 <li class="submit">
                     <img src="img/button_submit.png">
@@ -164,7 +240,7 @@
                         <p id="five" class="num" onmouseover="pageSelect(this)" onmouseout="movePageSelect(this)" onclick="pageClick(this)">5</p>
                     </li>
                     <li>
-                        <p id="more" class="num" onmouseover="pageSelect(this)" onmouseout="movePageSelect(this)"> ... </p>
+                        <p id="more" class="num"> ... </p>
                     </li>
                     <li>
                         <p id="last" class="num" onmouseover="pageSelect(this)" onmouseout="movePageSelect(this)" onclick="pageClick(this)">100</p>
@@ -177,39 +253,6 @@
         </div>
     </main>
 
-    <!-- form -->
-    <div>
-        <form class="new_work hide" action="" method="GET">
-            <div class="title">
-                <p>新建作品</p>
-                <a onclick="layer.style.display=none"></a>
-            </div>
-            <div class="body">
-                <p>
-                    <label>资源名称</label>
-                    <input type="input" name="resource_name" id="resource_name">
-                </p>
-                <p>
-                    <label>作者</label>
-                    <input type="input" name="author" id="author">
-                    <img src="img/icon_add.png" id="add">
-                    <!-- <input type="button" name="add" id="add"> -->
-                </p>
-                <p>
-                    <label>配图</label>
-                    <input type="input" name="picture" id="picture">
-                </p>
-                <p>
-                    <label>简介</label>
-                    <input type="input" name="intro" id="intro">
-                </p>
-            </div>
-            <div class="footer">
-                <input type="submit" name="submit" id="submit" value="确认提交">
-                <p>提交后显示在班级作品区</p>
-            </div>
-        </form>
-    </div>
 </body>
 
 </html>

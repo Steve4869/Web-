@@ -11,6 +11,7 @@
         height: 100%;
         width: 100%;
         font-size: 16px;
+        /* overflow: hidden; */
     }
 }
 
@@ -20,7 +21,12 @@
         height: 100%;
         width: 100%;
         font-size: 12px;
+        /* overflow: hidden; */
     }
+}
+
+.background_color {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* top */
@@ -153,6 +159,7 @@
 }
 
 .my_works>p {
+    height: 2.8125rem;
     padding-left: 3.375rem;
     padding-right: 3.375rem;
     line-height: 2.9375rem;
@@ -193,14 +200,12 @@
     height: 2.125rem;
     padding-left: 2.875rem;
     padding-right: 1.25rem;
-    position: relative;
     float: right;
 }
 
 .new>img {
     margin-right: 3.375rem;
     height: 2.125rem;
-    position: relative;
     float: right;
 }
 
@@ -217,7 +222,6 @@
     width: 13.8%;
     background: #3d485d;
     float: left;
-    /* position: absolute; */
 }
 
 .lesson li {
