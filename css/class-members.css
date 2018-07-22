@@ -56,7 +56,7 @@
 .cm_body {
     margin-left: 1.25rem;
     margin-top: 1.375rem;
-    height: 29rem;
+    height: 80%;
     display: flex;
     flex-direction: row;
 }
@@ -139,7 +139,7 @@
 /* footer */
 
 .cm_footer {
-    height: 4.1875rem;
+    height: 12%;
     background: #f0f5f9;
     border-radius: 0 0 0.5rem 0.5rem;
     display: flex;
