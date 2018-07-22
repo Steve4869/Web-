@@ -180,27 +180,25 @@ function nwSubmit() {
         author = document.getElementById("author"),
         picture = document.getElementById("picture"),
         intro = document.getElementById("intro")
-        message = document.getElementById("message");
-    if(resourceName.value != null && author.value != null && picture.value != null && intro.value.length <= 140) {
-        message.innerText = "提交成功！"
-        resourceName.value = null;
-        author.value = null;
-        picture.value = null;
-        intro.value = null;
+    if(resourceName.value != "" && author.value != "" && picture.value != "" && intro.value.length <= 140) {
+        alert("提交成功!");
+        console.log(resourceName.value);
+        console.log(author.value);
+        console.log(picture.value);
+        console.log(intro.value.length);
+        return false;
     }
     else {
-        message.innerText = "提交失败，请注意填写！";
-        resourceName.value = null;
-        author.value = null;
-        picture.value = null;
-        intro.value = null;
-    }
-    // alert(resourceName.value);
-    // alert(author.value);
-    // alert(picture.value);
-    // alert(intro.value.length);
-    // console.log(resourceName.value);
-    // console.log(author.value);
-    // console.log(picture.value);
-    // console.log(intro.value.length);
+        alert("提交失败，请注意填写！");
+        console.log(resourceName.value);
+        console.log(author.value);
+        console.log(picture.value);
+        console.log(intro.value.length);
+        return false;
+    };
+    //  alert(resourceName.value);
+    //  alert(author.value);
+    //  alert(picture.value);
+    //  alert(intro.value.length);
+    
 }

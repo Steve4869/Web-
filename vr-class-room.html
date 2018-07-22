@@ -46,9 +46,8 @@
                     </p>
                 </div>
                 <div class="nw_footer">
-                    <input type="submit" name="submit" id="submit" value="确认提交" onsubmit="nwSubmit()">
+                    <input type="submit" name="submit" id="submit" value="确认提交" onclick="nwSubmit()">
                     <p>提交后显示在班级作品区</p>
-                    <h2 id="message"></h2>
                 </div>
             </form>
         </div>
@@ -57,7 +56,7 @@
     <!-- cm_form -->
     <div id="add">
             <div id="popup">
-                <div id="class_members">
+                <form id="class_members">
                     <div class="cm_title">
                         <div></div>
                         <p>班级成员</p>
@@ -89,7 +88,7 @@
                     <div class="cm_footer">
                         <input type="button" value="确认" id="ok" onclick="btOk()">
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 
