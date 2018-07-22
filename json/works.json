@@ -1,128 +1,42 @@
-{
-    "works-list" : [
-        {
-            "静夜思" : [
-                {
-                    "myWorks" : [
-                        {
-                            "img" : "img/icon_none.png",
-                            "p" : "暂无可用资源"                           
-                        }
-                    ],
-                    "classWorks" : [
-                        {
-                            "img" : "img/icon_none.png",
-                            "p" : "暂无可用资源"
-                        }
-                    ]                  
-                }
-            ],
-            "红军长征" : [
-                {
-                    "myWorks" : [
-                        {
-                            "img" : "img/icon_none.png",
-                            "p" : "暂无可用资源"                           
-                        }
-                    ],
-                    "classWorks" : [
-                        {
-                            "img" : "img/icon_none.png",
-                            "p" : "暂无可用资源"
-                        }
-                    ]                  
-                }
-            ],
-            "活字印刷术" : [
-                {
-                    "myWorks" : [
-                        {
-                            "img" : "img/icon_none.png",
-                            "p" : "暂无可用资源"                           
-                        }
-                    ],
-                    "classWorks" : [
-                        {
-                            "img" : "img/icon_none.png",
-                            "p" : "暂无可用资源"
-                        }
-                    ]                  
-                }
-            ],
-            "郑和下西洋" : [
-                {
-                    "myWorks" : [
-                        {
-                            "img" : "img/photo01.png",
-                            "p" : "郑和下西洋"                           
-                        },
-                        {
-                            "img" : "img/photo02.png",
-                            "p" : "郑和下西洋"
-                        },
-                        {
-                            "img" : "img/photo01.png",
-                            "p" : "郑和下西洋"                           
-                        },
-                        {
-                            "img" : "img/photo02.png",
-                            "p" : "郑和下西洋"
-                        },
-                        {
-                            "img" : "img/photo01.png",
-                            "p" : "郑和下西洋"                           
-                        },
-                        {
-                            "img" : "img/photo02.png",
-                            "p" : "郑和下西洋"
-                        },
-                        {
-                            "img" : "img/photo01.png",
-                            "p" : "郑和下西洋"                           
-                        },
-                        {
-                            "img" : "img/photo02.png",
-                            "p" : "郑和下西洋"
-                        }
-                    ],
-                    "classWorks" : [
-                        {
-                            "img" : "img/icon_none.png",
-                            "p" : "暂无可用资源"
-                        }
-                    ]                  
-                }
-            ],
-            "梦想之家" : [
-                {
-                    "myWorks" : [
-                        {
-                            "img" : "img/icon_none.png",
-                            "p" : "暂无可用资源"                           
-                        }
-                    ],
-                    "classWorks" : [
-                        {
-                            "img" : "img/icon_none.png",
-                            "p" : "暂无可用资源"
-                        }
-                    ]                  
-                }
-            ],
-            "页码" : {
-                "myWorks" : [
-                    {
-                        "img" : "img/icon_none.png",
-                        "p" : "暂无可用资源"                           
-                    }
-                ],
-                "classWorks" : [
-                    {
-                        "img" : "img/icon_none.png",
-                        "p" : "暂无可用资源"
-                    }
-                ]                 
+[{
+        "none": [{
+            "img": "img/icon_none.png",
+            "p": "暂无可用资源"
+        }]
+    },
+    {
+        "work-list": [{
+                "img": "img/photo01.png",
+                "p": "郑和下西洋"
+            },
+            {
+                "img": "img/photo02.png",
+                "p": "郑和下西洋"
+            },
+            {
+                "img": "img/photo01.png",
+                "p": "郑和下西洋"
+            },
+            {
+                "img": "img/photo02.png",
+                "p": "郑和下西洋"
+            },
+            {
+                "img": "img/photo01.png",
+                "p": "郑和下西洋"
+            },
+            {
+                "img": "img/photo02.png",
+                "p": "郑和下西洋"
+            },
+            {
+                "img": "img/photo01.png",
+                "p": "郑和下西洋"
+            },
+            {
+                "img": "img/photo02.png",
+                "p": "郑和下西洋"
             }
-        }
-    ]
-}
+        ]
+    }
+]

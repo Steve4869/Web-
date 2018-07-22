@@ -23,6 +23,16 @@ function lessonClick(obje) {
             }
         }
         obje.className = "lesson_click";
+        // request.onload = function() {
+        //     var readWorks = request.response;
+        //     showWorks(readWorks);
+        // }
+    }
+    if(obje.id == "zh"){
+        location.href = "vr-class-room.html";
+    }
+    else {
+        location.href = "vr-class-room-none.html";
     }
 };
 
@@ -175,6 +185,8 @@ function btOk() {
         hPopup();
 }
 
+// 提交表单
+
 function nwSubmit() {
     var resourceName = document.getElementById("resource_name"),
         author = document.getElementById("author"),
@@ -202,3 +214,34 @@ function nwSubmit() {
     //  alert(intro.value.length);
     
 }
+
+// 读取 json
+// var requestURL = "https://github.com/Steve4869/Web-/blob/master/json/works.json";
+// var request = new XMLHttpRequest();
+// request.open("GET", requestURL);
+
+// request.responseType = "json";
+// request.send();
+
+// request.onload = function() {
+//     var readWorks = request.response;
+//     showWorks(readWorks);
+// }
+
+// function showWorks(jsonObj) {
+//     var list = jsonObj["work-list"],
+//         photo = document.getElementsByClassName["photo"];
+
+//     for(var i = 0; i < list.length; i++) {
+//         var listItem = document.createElement("li"),
+//             img = document.createElement("img"),
+//             p = document.createElement("p");
+
+//         img.textContent = list[i].img;
+//         p.textContent = list[i].p;
+//         listItem.appendChild(img);
+//         listItem.appendChild(p);
+
+//         photo[0].appendChild(listItem);
+//     }
+// }
